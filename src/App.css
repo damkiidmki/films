@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.films {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-body-stars {
+  box-shadow: 2px 1px 6px 2px #968f89;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 150px;
+  border: 1px solid #000000;
+  margin: 20px;
+  padding: 15px;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body-stars::before {
+  width: 100%;
+  font-size: 14px;
+  content: 'Фильм';
+}
+
+.card-body-stars li {
+  position: relative;
+  margin-top: 70px;
 }
